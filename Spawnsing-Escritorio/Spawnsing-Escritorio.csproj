@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Spawn sign logofaro.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,14 +49,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AgregarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaUsuario.Designer.cs">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConsultaUsuario.resx">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +103,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundbeta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spawnsign logo.png" />
+    <None Include="Resources\Spawn sign logofaro.PNG" />
+    <None Include="Resources\Logo.png" />
+    <Content Include="Spawn sign logofaro.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

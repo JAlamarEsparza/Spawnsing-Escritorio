@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Spawnsing_Escritorio
 {
-    public partial class Form1 : Form
+    public partial class EliminarUsuario : Form
     {
-        public Form1()
+        public EliminarUsuario()
         {
             InitializeComponent();
         }
