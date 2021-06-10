@@ -33,9 +33,10 @@ namespace Spawnsing_Escritorio
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.but = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnConsultaUsuario = new System.Windows.Forms.Button();
+            this.btnAgregarUsuario = new System.Windows.Forms.Button();
+            this.btnEliminarUsuario = new System.Windows.Forms.Button();
+            this.btnCerrarInicio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,42 +74,56 @@ namespace Spawnsing_Escritorio
             this.label2.TabIndex = 2;
             this.label2.Text = "A";
             // 
-            // but
+            // btnConsultaUsuario
             // 
-            this.but.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.but.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.but.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.but.Location = new System.Drawing.Point(117, 553);
-            this.but.Name = "but";
-            this.but.Size = new System.Drawing.Size(227, 99);
-            this.but.TabIndex = 3;
-            this.but.Text = "Consulta Usuario";
-            this.but.UseVisualStyleBackColor = true;
-            this.but.Click += new System.EventHandler(this.but_Click);
+            this.btnConsultaUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultaUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnConsultaUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnConsultaUsuario.Location = new System.Drawing.Point(117, 553);
+            this.btnConsultaUsuario.Name = "btnConsultaUsuario";
+            this.btnConsultaUsuario.Size = new System.Drawing.Size(227, 99);
+            this.btnConsultaUsuario.TabIndex = 3;
+            this.btnConsultaUsuario.Text = "Consulta Usuario";
+            this.btnConsultaUsuario.UseVisualStyleBackColor = true;
+            this.btnConsultaUsuario.Click += new System.EventHandler(this.btnConsultaUsuario_Click);
             // 
-            // button2
+            // btnAgregarUsuario
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.button2.Location = new System.Drawing.Point(682, 553);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(228, 99);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Creación Usuario";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAgregarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnAgregarUsuario.Location = new System.Drawing.Point(682, 553);
+            this.btnAgregarUsuario.Name = "btnAgregarUsuario";
+            this.btnAgregarUsuario.Size = new System.Drawing.Size(228, 99);
+            this.btnAgregarUsuario.TabIndex = 4;
+            this.btnAgregarUsuario.Text = "Agregar Usuario";
+            this.btnAgregarUsuario.UseVisualStyleBackColor = true;
+            this.btnAgregarUsuario.Click += new System.EventHandler(this.btnAgregarUsuario_Click);
             // 
-            // button3
+            // btnEliminarUsuario
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1250, 553);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 99);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Eliminación Usuario";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(1250, 553);
+            this.btnEliminarUsuario.Name = "btnEliminarUsuario";
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(227, 99);
+            this.btnEliminarUsuario.TabIndex = 5;
+            this.btnEliminarUsuario.Text = "Eliminación Usuario";
+            this.btnEliminarUsuario.UseVisualStyleBackColor = true;
+            this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
+            // 
+            // btnCerrarInicio
+            // 
+            this.btnCerrarInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(18)))), ((int)(((byte)(15)))));
+            this.btnCerrarInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarInicio.Location = new System.Drawing.Point(1619, 0);
+            this.btnCerrarInicio.Name = "btnCerrarInicio";
+            this.btnCerrarInicio.Size = new System.Drawing.Size(52, 40);
+            this.btnCerrarInicio.TabIndex = 6;
+            this.btnCerrarInicio.Text = "X";
+            this.btnCerrarInicio.UseVisualStyleBackColor = false;
+            this.btnCerrarInicio.Click += new System.EventHandler(this.btnCerrarInicio_Click);
             // 
             // Inicio
             // 
@@ -117,18 +132,22 @@ namespace Spawnsing_Escritorio
             this.BackgroundImage = global::Spawnsing_Escritorio.Properties.Resources.backgroundbeta;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1671, 758);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.but);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnCerrarInicio);
+            this.Controls.Add(this.btnEliminarUsuario);
+            this.Controls.Add(this.btnAgregarUsuario);
+            this.Controls.Add(this.btnConsultaUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Spawnsign";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,9 +159,10 @@ namespace Spawnsing_Escritorio
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button but;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnConsultaUsuario;
+        private System.Windows.Forms.Button btnAgregarUsuario;
+        private System.Windows.Forms.Button btnEliminarUsuario;
+        private System.Windows.Forms.Button btnCerrarInicio;
     }
 }
 
